@@ -8,7 +8,7 @@ let app = express();
 
 let hostname = os.hostname();
 
-app.get("/swarmtest", (req, res) => {  
+app.get("/test", (req, res) => {  
     res.json({ "guid": uuid.v4(), "container": hostname });
 });
 
